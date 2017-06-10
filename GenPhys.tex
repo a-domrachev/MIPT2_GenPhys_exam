@@ -11,6 +11,12 @@
 \lhead{Экзамен: термодинамика} 
 
 \renewcommand{\headrulewidth}{0.5pt}
+\newcommand{\RomanNumeralCaps}[1]
+{\MakeUppercase{\romannumeral #1}}
+
+\newcommand{\chpr}[3]{\left(\dfrac{\partial #1}{\partial #2}\right)_#3}
+\newcommand{\Chpr}[3]{\left(\frac{\partial #1}{\partial #2}\right)_#3}
+\newcommand{\vtchpr}[4]{\dfrac{\partial}{\partial #1}\left(\dfrac{\partial #2}{\partial #3}\right)_#4}
 
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -23,9 +29,11 @@
 \setcounter{tocdepth}{1}
 
 \begin{document}
-\begin{titlepage}
+
+\input{cover.tex}
+
 \tableofcontents
-\end{titlepage}
+\newpage
 
  \input{question_1.tex}
  
@@ -42,4 +50,20 @@
  \input{question_7.tex}
  
  \input{question_8.tex}
+  
+ \input{question_9.tex}
+ 
+ \input{question_10.tex}
+  
+ \input{question_11.tex}
+   
+ \input{question_12.tex}
+ 
+ \input{question_13.tex}
+   
+ \input{question_14.tex}
+ 
+ \input{question_15.tex}
+ 
+ \input{question_16.tex}
 \end{document}
