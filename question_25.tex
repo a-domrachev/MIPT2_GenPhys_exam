@@ -1,0 +1,22 @@
+
+
+\section{\normalsize Распределения Максвелла по проекциям и модулю скорости частиц. Наиболее вероятная, средняя и среднеквадратичная скорости.}
+\paragraph{Распределения Максвелла по проекциям и модулю скорости частиц.} Газ состоит из большого числа $N$ тождественных молекул, находящихся в состоянии беспорядочного теплового движения при $T$. $\varphi(v_x)dv_x$ --- вероятность попадания проекции скорости молекулы в интервал $(v_x;\vDash_x+dv_x)$. Найдем $f(v)=\varphi(v_x)\varphi(v_y)\varphi(v_z)$, предполагая, что попадание одной проекции в нужный интервал не зависит от других.\\
+$\varphi(v)\sim e^{-\beta E}$, где $\beta=\frac{1}{KT}$, а так как молекулы обладают лишь кинетической энергией в нашей модели, то энергия одной частицы $E=\dfrac{mv^2}{2}$; $\int_{-\infty}^{+\infty}\varphi(v_x)dv_x=1$ --- условие нормировки.\\
+$\varphi(v_x)=A\exp\left\{\frac{-mv_x^2}{2kT}\right\}\Rightarrow A\int_{-\infty}^{+\infty}\exp\left\{\frac{-mv_x^2}{2kT}\right\}dv_x=1\Leftrightarrow A=\left(\int_{-\infty}^{+\infty}\exp\left\{\frac{-mv_x^2}{2kT}\right\}dv_x\right)^{-1}$\\
+\begin{multline*}
+I=\int_{-\infty}^{\infty}e^{-x^2}dx\Rightarrow I^2=\int_{-\infty}^{+\infty}e^{-x^2}dx\infint e^{-y^2}dy=\infint\infint e^{-x^2+y^2}dxdy(dxdy=d\text{П})=\\=\int_{0}^{+\infty}e^{-r^2}2\pi rdr=2\pi\int_{0}^{+\infty}e^{-r^2}rdr=\left|\blacktriangleright z=r^2,\ dz=2rdr\blacktriangleleft\right|=\pi\int_{0}^{\infty}e^{-z}dz=-\pi e^{-z}|_0^\infty=\pi\Rightarrow\\\Rightarrow A^{-1}=\infint e^{-\frac{mv_x^2}{wkT}}dv_x=\left|\blacktriangleright z^2=\frac{mv_x^2}{2kT},\ dz=\sqrt{\frac{m}{2kT}}dv_x\blacktriangleleft\right|=\sqrt{\frac{2kT}{m}}\infty e^{-z^2}dz=\sqrt{\frac{2\pi kT}{m}}\Rightarrow\\\Rightarrow \varphi(v_x)=\sqrt{\frac{m}{2\pi kT}}e^\frac{-mv_x^2}{2kT}
+\end{multline*}
+$\varphi(v_x)=\sqrt{\frac{m}{2\pi kT}}e^\frac{-mv_x^2}{2kT}$\textbf{ --- закон распределения Максвелла по проекциям скоростей частиц.}\\
+$F(v)=f(v_x)f(v_y)f(v_z)\cdot4\pi v^2=(\frac{m}{2\pi kT})^{3/2}\cdot4\pi v^2e^{-\frac{mv^2}{2kT}}$ --- \textbf{закон распределения Максвелла по абсолютным значениям скоростей.}\\
+\paragraph{Наиболее вероятная, средняя и среднеквадратичная скорости.} 
+\begin{enumerate}
+	\item Наиболее вероятная скорость. $(F(v))'=0\Leftrightarrow2ve^{-\frac{mv^2}{2kT}}-2v^2\frac{mv}{2kT}e^{-\frac{mv^2}{2kT}}=0\Leftrightarrow v_\text{нв}=\frac{2kT}{m}$
+	\item Средняя скорость.
+	 $<v>=\int_{0}^{\infty}vF(v)dv=4\pi\sqrt{\frac{m}{2\pi kT}}^3\int_{0}^{\infty}e^{-\frac{mv^2}{2kT}}v^3dv$
+	 \[I(\lambda)=\int_{0}^{\infty}e^{-\lambda z^2}zdz=\left|\blacktriangleright \lambda z^2=x,\ 2\lambda zdz=dx \blacktriangleleft\right|=\dfrac{1}{2\lambda}\int_{0}^{\infty}e^{-x}dx=\left.\frac{1}{2\lambda}(-e^x)\right|_0^\infty=\frac{1}{2\lambda} \Rightarrow\]
+	 \[<v>=\int_{0}^{\infty}vF(v)dv=4\pi\left(\frac{m}{2\pi kT}\right)^{3/2}\frac{1}{2}\left(\frac{2kT}{m}\right)^2=\sqrt{\frac{8kT}{\pi m}} \]
+	 \item Среднеквадратичная скорость. $\left< v^2 \right>=\int_{0}^{\infty}v^2F(v)dv=4\pi\left(\frac{m}{2\pi kT}\right)^{3/2}\int_{0}^{\infty}e^{-\frac{mv^2}{2kT}v^4dv}$
+	 \[ I(\lambda)=\int_{0}^{\infty}e^{-\lambda z^2}dz=\left|\blacktriangleright x^2=\lambda z^2;\ dx=\sqrt{\lambda}dz \blacktriangleleft\right|=\frac{1}{\sqrt{\lambda}}\int_{0}^{\infty}e^{-x^2}dx=0.5\sqrt{\frac{\pi}{\lambda}}\]
+	 \[\frac{d^2 I}{d\lambda^2}=\int_{0}^{\infty}e^{-\lambda z^2}z^4dz=\frac{3\pi}{8\lambda^{3/2}}\Rightarrow \left< v^2 \right>=4\pi\left(\frac{m}{2\pi kT}\right)^{3/2}\frac{3}{4}\frac{\sqrt{\pi}}{2}\left(\frac{2kT}{m}\right)^{5/2} =\frac{3kT}{m}\Rightarrow\] \[\Rightarrow v_\text{ср.кв.}\sqrt{\left< v^2\right>}=\sqrt{\frac{3kT}{m}} \]
+	\end{enumerate}

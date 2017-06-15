@@ -1,0 +1,16 @@
+\section{\normalsize Скорость звука в газах. Скорость истечения газа из отверстия.}
+\paragraph{Скорость звука в газах.} Колебания плотности, связанные с ними колебания температуры в звуковой волне происходят так быстро, что из-за малой теплопроводности воздуха \textbf{теплообмен не играет никакой роли}! Разности температур между сгущениями и разрежениями воздуха в звуковой волне не успевают выравниваться $\then$ его распространение можно считать \textbf{адиабатическим}\\
+В уравнении адиабаты $P\sim\rho^\gamma\then \left(\dfrac{\partial P}{\partial \rho}\right)_\text{адиаб.}=\gamma \dfrac{P}{\rho}=\gamma\dfrac{RT}{\mu}\then$\\$\then c_\text{зв}=\sqrt{\left(\dfrac{\partial P}{\partial \rho}\right)_\text{адиаб.}}=\sqrt{\gamma\dfrac{RT}{\mu}}$.\\ Для воздуха $\gamma=1.4;\;\mu=28.8;$ при $T=273$ К $c_\text{зв}\simeq330$~м/с
+\paragraph{Истечение газа из отверстия.} Исследуем адиабатическое ламинарное течение. Пусть изначально газ находился в сосуде при давлении $P_1$ и температуре $T_1$, после он истекает в среду с температурой $T_2$ и давлением $P_2$, известны все эти величины кроме $T_2$.\\
+Уравнение Бернулли:
+\begin{equation}
+\label{bernuli} 
+\dfrac{v_1^2}{2}+\dfrac{P_1}{\rho_1}+gh_1+u_1=\dfrac{v^2_2}{2}+\dfrac{P_2}{\rho_2}+gh_2+u_2,\,
+\end{equation}  $gh=const$, т.к. не меняется существенно вдоль трубки тока.  Введем $H=I=U+PV$ --- энтальпия. $i = u+Pv_\text{уд.}$ --- удельная энтальпия. Подставим i в (\ref{bernuli}) $$\dfrac{v_1^2}{2}+i_1=\dfrac{v_2^2}{2}+i_2$$
+Если сосуд большой, а отверстие мало, то можно принять, что скорость газа в сосуде $v_1=0 \then v_2=\sqrt{2(i_1-i_2)}$. \\
+В случае идеального газа ($C_V=const$): $i=u+\dfrac{P}{\rho}=\dfrac{C_VT}{\mu}+\dfrac{RT}{\mu}=\dfrac{C_PT}{\mu}\then$\\
+$\then v =$ \fbox{$\sqrt{\dfrac{2}{\mu}C_P(T_1-T_2)}$}\\
+\textbf{Вычислительная формула}: $\dfrac{P_1^{\gamma-1}}{T_1^\gamma}=\dfrac{P_2^{\gamma -1}}{T_2^\gamma}\Leftrightarrow T_2=T_1\left(\dfrac{P_2}{P_1}\right)^{\tfrac{\gamma-1}{\gamma}}\\$
+$$v = \text{\fbox{$\sqrt{\dfrac{2}{\mu}C_PT_1\left[1-\left(\dfrac{P_2}{P_1}\right)^{\tfrac{\gamma -1}{\gamma}}\right]}$}}$$\\
+Максимальная скорость достигается при истечении в вакуум: $v_\text{вак.}=\sqrt{\dfrac{2}{\mu}C_PT}$ или \\
+$v_\text{вак.}=\sqrt{\dfrac{2}{\mu}\dfrac{\gamma}{\gamma-1}RT}=\sqrt{\dfrac{2}{\gamma -1}}c_\text{зв.}$
