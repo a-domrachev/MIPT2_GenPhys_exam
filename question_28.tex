@@ -1,0 +1,19 @@
+\section{\normalsize Распределение Больцмана. Барометрическая формула.} Пусть $\mathbf{f}$ --- объемная сила в расчете на одну частицу. Выделим в газе элемент объема толщиной $dz$ и площадью основания $S$. В этом элементе находится $dN=nSdz$ частиц, где $n$ --- объемная плотность числа частиц. Условие механического равновесия слоя имеет вид:
+\[f_zdN+P(z)dS-P(z+dz)S=0\text{ или }\frac{\partial P}{\partial z}=f_zn  \] 
+Пусть сила $\mathbf{f}$ --- потенциальная, $\mathbf{f}$ $=-\text{grad}\,u(\mathbf{r})$, $f_z=-\frac{\partial u}{\partial z}$. Тогда для идеального газа при $T=const$ отсюда следует
+\[\frac{\partial P}{\partial z}=-\frac{\partial u}{\partial z}\frac{P}{kT}\Rightarrow\frac{\partial(\ln P)}{\partial z}=-\frac{\partial}{\partial z}\left(\frac{u}{kT}\right)\Rightarrow P=P_0\exp\left(-\frac{u}{kT}\right) \]
+Для частного случая однородного поля тяжести $\mathbf{f}=m\mathbf{g}$ потенциальная энергия равна $u=-m\mathbf{gr}=mgz$. Тогда
+\[P=P_0\exp\left(-\frac{mgz}{kT}\right).  \]
+Это соотношение называется \textbf{барометрической формулой}.\\
+Поскольку $P=nkT$, то распределение плотности числа частиц $n$ идеального газа в потенциальном поле имеет вид
+\begin{equation}
+\label{eq:bolz1}
+n=n_0\exp\left(-\frac{u}{kT}\right)
+\end{equation}
+Это распределение дает средние значения плотности, поскольку состояние равновесия динамическое и возможны отклонения от среднего (флуктуации) в какие-то моменты времени.\\
+Для числа частиц $dN=ndV$, находящихся в элементе объема $dV$, из \eqref{eq:bolz1} следует
+\begin{equation}
+\label{eq:bolz2}
+dN=n_0\exp\left(-\frac{u}{kT}\right)dV.
+\end{equation}
+Соотношения \eqref{eq:bolz1} и \eqref{eq:bolz2} называются \textbf{распределением Больцмана.}
